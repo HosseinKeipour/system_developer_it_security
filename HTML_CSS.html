@@ -1,0 +1,156 @@
+
+<html>
+    <head>
+        <title>HTML and CSS</title>
+        <link rel="stylesheet" href="External.css">
+        <style>
+            table, tr, td, th{
+                border: 2px solid black; 
+                padding: auto;
+                border-spacing: 2px;
+            }
+            tr:nth-child(even){
+                background-color: aquamarine;
+            }
+            tr:nth-child(odd){
+                background-color: antiquewhite;
+            }
+
+            .test{
+                border: 3px solid goldenrod;
+                font-family: 'Courier New', Courier, monospace;
+                size: 12px;
+            }
+
+            #id1{
+                color: blue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Student Info</caption>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th style="width: 50%;">Age</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Ali</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Hossein</th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <th colspan="2">Total</th>
+                <th>55</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Total</th>
+                <th>44</th>
+                <th>66</th>
+            </tr>
+            <tr>
+                <th>new</th>
+                <th>6</th>
+            </tr>
+        </table>
+
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: purple;">
+                <col span="2" style="background-color: purple;">
+            </colgroup>
+            <tr>
+                <th>Mondag</th>
+                <th>Tisdag</th>
+                <th>Onsdag</th>
+                <th>Tursdag</th>
+                <th>Fredag</th>
+                <th>Lordag</th>
+                <th>Sondag</th>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+            </tr>
+        </table>
+
+        <!-- HTML Lists-->
+        <!-- Ordered list & unordered list-->
+        <ol>
+            <li>tea</li>
+            <li>coffee</li>
+            <li>juice</li>
+        </ol>
+
+        <ol type="A">
+            <li>tea</li>
+            <li>coffee</li>
+            <li>juice</li>
+        </ol>
+
+        <ul style="list-style-type: circle;">
+            <li>tea</li>
+            <li>coffee</li>
+            <li>juice</li>
+        </ul>
+
+        <ul>
+            <li id="id1">coffee type
+                    <ol>
+                        <li>Dark coffee</li>&nbsp;
+                        <li>Filter coffee</li>
+                    </ol>
+            </li>
+
+            <li>Milk shakes
+                    <ol>
+                        <li>Strawberry</li>
+                        <li>Chololate</li>
+                        <li>Mango</li>
+                    </ol>
+            </li>
+        </ul>
+
+        <!--Description list-->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>It is a good one.</dd>
+            <dt>Milk</dt>
+            <dd>It is white! :)</dd>
+        </dl>
+
+        <!-- Inline and block level elements-->
+        <p>hello how are you?</p>
+        <h1>hej</h1>
+
+        <p>hello</p><span>how are you?</span>
+
+        <!--HTML iframes(small portion of webpage)-->
+        <iframe src="Basics.html" name="frame1" target="frame1" frameborder="0"></iframe>
+        <p><a href="https://www.google.com" target="frame1">Click here</a></p>
+    
+        <!-- CSS, External CSS, Internal CSS, Inline CSS -->
+
+        <!-- External CSS-->
+
+        <!-- Borders -->
+        <p style="border: 3px solid black; border-radius: 15px;">Hello world</p>
+
+
+        <!--Class attribute-->
+        <h2 class="test">This is my first class</h2>
+        <h5 class="test">This is my first class</h2>
+    </body>
+</html>
