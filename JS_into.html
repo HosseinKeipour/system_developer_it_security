@@ -1,0 +1,126 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+
+    <script>
+
+        
+        function display()
+        {
+            // single line comment
+
+            /* multi line comment*/
+            var v1 = 10; // var is global scope
+            let my_var = 20; // let is for function block scope
+            var v2 = 20;
+            var z = v1 + v2;
+            document.write(z)
+
+            let l1 = 10;
+            //document.write(l1)
+            const a1 = 500;
+            //console.log("banana")
+            //document.getElementsByClassName("xyz")[0].innerHTML = "Hello how are you?"
+            
+        
+
+            // data types
+            var s1 = 10;        // auto data type by var
+            var s2 = "Hello";
+            var s3 = ' ';
+
+            // conditional statments in JS
+            // 1. if statments
+            // 2. if else
+            // 3. if else if
+
+            var a12 = 10;
+            if (a12 > 10)
+            {
+                document.write("value of a12 is greater than 10")
+            }
+            else if(a12<10)
+            {
+                document.write("value of a12 is lower than 10")
+            }
+            else
+            {
+                document.write("value of a12 is equal to 10")
+            }
+
+            document.write(v1)
+            function msg()
+            {
+                alert("Hello world")
+            }
+
+            // Loops in JS
+            /* 
+            1. for loop
+            2. while loop
+            3. do while loop
+            4. for-in   
+            */ 
+            // for (initial; condition; increment)
+            for (i=0;i<10;i++)
+            {
+                document.write("the for value is: "+ i +"<br>");
+                // 12 + 13
+                // "hello"+"world"
+            }
+            // while(condition)
+            // {
+            //     code to be executed;
+            // }
+            var w1 = 5;
+            while(w1<12)
+            {
+                document.write("the while value is: "+ w1 +"<br>");
+                w1 ++
+            }
+
+            //do-while loop : it will be executed at least once
+            var w2 =1
+            do {
+                document.write("the do-while value is: "+ w2+"<br>");
+                w2 ++
+            } while (w2<5);
+
+            //for-in loop
+            /*function
+
+            function functionname(parameter1, parameter2, ...)
+            {
+                your code
+            }*/
+
+
+        }    
+        function square1(number)
+            {
+                // document.write()
+                document.write(number*number)
+                return number*number
+            }
+        function square2(number)
+        {
+            return number*number
+        }
+        document.getElementById("xyz").innerHTML = square2(4)
+    </script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <p class="xyz"></p> 
+    <button type="button" name="btn1" value="Click me" onclick="display()">Click me</button> 
+    <button type="button" name="btn2" value="Message" onclick="msg()">Message</button> 
+    <button type="button" name="btn3" value="square" onclick="square1(10)">Square1</button>
+    <button type="button" name="btn3" value="square" onclick="square2(10)">Square2</button> 
+</body>
+</html>
