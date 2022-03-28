@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Beer Store</title>
+</head>
+<body>
+    <nav>
+        <!-- Here you will code in the navigation bar-->
+        <div class="topnav">
+            <a class='logo' href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <a href="index.html">Home</a>
+            <a href="all-beers.html">See all Beers</a>
+            <a class='active'   href="order.html">Order a Beer</a>
+            <a class='right' href="register.html">Register</a>
+            <a class='right' href="login.html">Log in</a>
+            
+        </div>
+    </nav>
+    <main style="text-align: center;">
+        <!-- Here will be all the content between the navigation bar and the footer-->
+        <h1>Order a beer</h1>
+        <label>Brand</label><br/>
+        <select name="" id="" style="width: 300px;">
+            <option selected disabled>Select a brand</option>
+            <option value="Corona Extra 330ml">Corona Extra 330ml</option>
+            <option value="Stella Artois 500ml">Stella Artois 500ml</option>
+            <option value="Carlsberg 330ml">Carlsberg 330ml</option>
+            <option value="Heineken 330ml">Heineken 330ml</option>
+        </select>
+        <br><br>
+        <label>Quantity</label><br/>
+        <input type="number" min="1" max="15" placeholder="Enter amount of beers (1-15)" style="width: 300px;">
+        <br><br>
+        <label>Destination</label><br/>
+        <select name="" id="" style="width: 300px;">
+            <option selected disabled>Select a destination</option>
+            <option value="Stockholm">Stockholm</option>
+            <option value="Gotenberg">Gotenberg</option>
+            <option value="Malmo">Malmo</option>
+            <option value="Karlskrona">Karlskrona</option>
+        </select>
+        <br><br>
+        <label>Enter your Birthday</label><br/>
+        <input type="date" style="width: 300px;">
+        <br><br>
+        <label>Share your opinion, comment, and recommendation.</label><br/>
+        <input type="text" style="width: 300px; height: 200px;">
+
+    </main>
+
+    <footer>
+        <!--Here is where you will code in your footer content shown on the bottom of the page-->
+        <hr/>
+        <p><em>&copy; 2022 &ndash; Beer Store</em></p>
+    </footer>
+
+</body>
+</html>
