@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // Alert
+            function msg_alert()
+            {
+                window.alert("Hello, this is an alert");
+                // alert;
+            }
+            function msg_confirm()
+            {
+                var v = confirm("Are you sure?")
+                if(v==true)
+                {
+                    alert("Ok?")
+                }
+                else
+                {
+                    alert("Cancel")
+                }
+            }
+            // Prompt
+            function msg_prompt()
+            {
+                var v1 = prompt("Who are you?")
+                alert("I am " + v1)
+            }
+            // Open
+            function msg_open()
+            {
+                window.open("https://wwww.google.com")
+            }
+
+        </script>
+    </head>
+    <body>
+        <!--
+            Window Object
+            alert(), confirm(), prompt(), open(), close()
+        -->
+        <label>Alert:</label><input type="button" onclick="msg_alert()" value="Click"><br><br>
+        <label>Confrim:</label><input type="button" onclick="msg_confirm()" value="Delete record"><br><br>
+        <label>Prompt:</label><input type="button" onclick="msg_prompt()" value="Enter"><br><br>
+        <label>Open:</label><input type="button" onclick="msg_open()" value="Open google"><br><br>
+
+    </body>
+</html>

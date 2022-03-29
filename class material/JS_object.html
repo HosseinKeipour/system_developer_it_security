@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <P id="demo">Hello</P>
+        <P id="array"></P>
+        <script>
+            // defining an object in JS
+            emp = {id:102, name:"xyz", salary: 50000};
+            document.write(emp.id + " " + emp.name + " " + emp.salary);
+            
+
+            // Or using new Keyword
+            emp1.id = 12;
+            emp1.age = 34;
+            emp.name = "abc";
+
+            /*Accessing the properties
+            ObjectName.property;
+            ObjectName[property];*/
+
+            document.write("\n" + emp1.id + " " + emp1.name + " " + emp1.age);
+            document.write("\n" + emp1["id"] + " " + emp1["name"] + " " + emp1["age"]);
+
+            // for-in loop
+            let emp_data = " ";
+            for(e in emp)
+            {
+                emp_data += emp[e] + " ";
+                //emp_data = emp_data + emp[e];
+            }
+            document.write("The employee info is" + emp_data);
+
+            // Adding new properties to an Object
+            emp.country = "Sweden";
+            document.writeln("The employee country is " + emp.country);
+
+            // Deleting an Object's property
+            delete emp.country
+            delete emp["country"]
+            document.writeln("emp country is deleted " + emp.country);
+
+            document.getElementById("demo").innerHTML = "Hossein";
+
+            // JS Array
+            var emp2 = ["xyz", "abc", "pqr"];
+            
+            var emp3 = new Array();
+            emp3[0] = "abc";
+            emp3[1] = "def";
+
+            var emp1_info = emp2[0];
+            var emp3_info = emp2[2];
+
+            emp2[2] = "tyu";
+
+            document.getElementById("array").innerHTML = emp2;
+
+            // Adding new element to an array using push
+            emp2.push("uio"); // add an element to the end of element
+            emp2.pop(); // delete the last element
+
+            // JS Strings
+            var car = "Volvo";
+            var car1 = "Renault";
+            var car3 = car.concat(car1);
+
+            document.write(car3);
+
+            // JS Date object
+            
+            var today = new Date;
+            document.write(today);
+
+            // JS Math Object
+            var m1 = Math.sqrt(4);
+            document.write("<br>"+m1);
+
+
+
+
+
+        </script>
+    </body>
+</html>

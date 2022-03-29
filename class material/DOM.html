@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // getElementById()
+            function getCube()
+            {
+                var number = document.getEleme(number).value;
+                window.alert(number*number*number*number)
+            }
+            // getElementsByName()
+            function totalElements()
+            {
+                var genders = document.getElementsByName("gender");
+                alert("Total genders:"+genders.length)
+            }
+
+            //<!-- getElementsByTagName()-->
+            function countH3()
+            {
+                var h3_count = document.getElementsByTagName("h3");
+                alert("Total h3:" + h3_count.length)
+            }
+            function countH2()
+            {
+                var h2_count = document.getElementsByTagName("h2");
+                alert("Total h2:" + h2_count.length)
+            }
+            
+        </script>
+    </head>
+    <body>
+        <!-- Document methods
+            Write(), writeln(), getElementById(), 
+            getElementByClassName(), getElementsByName(), 
+            getElementByTagName()
+        -->
+
+        <!--getElementById()-->
+        <form>
+            Enter no:<input type="text" id="number" name="number"><br>
+            <input type="button" value="Cube" onclick="getCube()">
+        </form>
+
+
+        <!-- getElementsByName()-->
+        <form>
+            Male:<input type="radio" name= "gender" value="male"><br>
+            Female:<input type="radio" name= "gender" value="female"><br>
+            <button type="button" value="Total Genders" onclick="totalElements()">Total Genders</button>
+        </form>
+
+
+        <!-- getElementsByTagName()-->
+        <h2>I am h2<h2>
+        <h2>I am h2<h2>
+        <h3>I am h3</h3>
+        <h3>I am h3</h3>
+        <h3>I am h3</h3>
+        <button type="botton" onclick="countH2()">count h2</button>
+        <button type="botton" onclick="countH3()">count h3</button>
+        
+
+        <!---->
+        <h2>HTML DOM</h2>
+        <p class="demo1">Hello world</p>
+        <p class="demo1">Hello world. How are you?</p>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+        const x = document.getElementsByClassName("demo1");
+        document.getElementById("demo").innerHTML = "The content of the first p is " + x[0].innerHTML;
+
+
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").id = "testing";
+
+        document.getElementById("testing").style.color = "green";
+    </script>
+</html>
