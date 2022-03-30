@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAB 5 JavaScript</title>
+        <script>
+            function sum3(numArray)
+            {
+                let sum = Number(numArray[0]) + Number(numArray[1]) + Number(numArray[2]);
+                return sum;
+            }
+            numArray = ['2', '3', '4'];
+            document.write("sum = " + sum3(numArray)+ "<br>----------------------------<br>")
+
+
+            // Task 2
+            function factor(numArray)
+            {   
+                let sum = 0;
+                for (num in numArray)
+                {
+                    sum += Number(numArray[num]);
+                }
+                vat = sum * 0.2;
+                total = sum + vat;
+                return {sum, vat, total};
+            }
+            numArray = ['2', '3', '4'];
+            document.write("sum = " + factor(numArray).sum+ "<br>"+
+                           "VAT = " + factor(numArray).vat+ "<br>"+
+                           "total = " + factor(numArray).total+ "<br>----------------------------<br>");
+
+            // Task 3
+            
+
+
+
+
+        </script>
+    </head>
+    <body>
+
+
+    </body>
+</html>
