@@ -60,8 +60,23 @@
             n = ['11'];
             document.write(series(n)+"<br>----------------------------<br>");
 
-            // Task 6, 
+            // Task 6, Figure Area
+            function area(areaInputArray)
+            {
+                w = areaInputArray[0];
+                h = areaInputArray[1];
+                W = areaInputArray[2];
+                H = areaInputArray[3];
+                
+                areaOut = (H*W + h*w)-Math.min(H,h)*Math.min(W,w);
+                return areaOut
+            }
 
+            areaInputArray = ['2', '4', '5', '3'];
+            // areaInputArray = ['13', '2', '5', '8'];
+            document.write(area(areaInputArray)+"<br>----------------------------<br>");
+
+            // Task 7,
         </script>
     </head>
     <body>
