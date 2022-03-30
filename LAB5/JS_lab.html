@@ -76,7 +76,31 @@
             // areaInputArray = ['13', '2', '5', '8'];
             document.write(area(areaInputArray)+"<br>----------------------------<br>");
 
-            // Task 7,
+            // Task 7, Next Day
+            function nextDay(inputDay)
+            {
+                year = Number(inputDay[0]);
+                month = Number(inputDay[1]);
+                day = Number(inputDay[2]);
+
+                day = Number(inputDay[2]) + 1;
+                if (day>30)
+                {
+                    day = 1;
+                    month +=1;
+                    if (month > 12)
+                    {
+                        month = 1;
+                        year += 1;
+                    }
+                }
+                return {year, month, day}
+            }
+            inputDay = ['2016', '9', '30'];
+
+            document.write("The next day is: "+nextDay(inputDay).year+"-"+nextDay(inputDay).month+"-"+nextDay(inputDay).day)
+            // Task 8, Distance between Points
+
         </script>
     </head>
     <body>
