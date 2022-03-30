@@ -3,6 +3,7 @@
     <head>
         <title>LAB 5 JavaScript</title>
         <script>
+            // Task 1 Sum 3 Numbers
             function sum3(numArray)
             {
                 let sum = Number(numArray[0]) + Number(numArray[1]) + Number(numArray[2]);
@@ -12,7 +13,7 @@
             document.write("sum = " + sum3(numArray)+ "<br>----------------------------<br>")
 
 
-            // Task 2
+            // Task 2 Sum And VAT
             function factor(numArray)
             {   
                 let sum = 0;
@@ -24,14 +25,27 @@
                 total = sum + vat;
                 return {sum, vat, total};
             }
-            numArray = ['2', '3', '4'];
+            numArray = ['3.12', '5', '18', '19.24', '1953.2262', '0.001564', '1.1445'];
             document.write("sum = " + factor(numArray).sum+ "<br>"+
                            "VAT = " + factor(numArray).vat+ "<br>"+
                            "total = " + factor(numArray).total+ "<br>----------------------------<br>");
 
-            // Task 3
-            
+            // Task 3 Letter Occurrences In String
+            function countLetter(inputArray)
+            {
+                let counter = 0;
+                for (l in inputArray[0])
+                {   
+                    
+                    if (inputArray[0][l] == inputArray[1])
+                        counter += 1;
+                }
+                return counter;
+            }
+            inputArray = ['hello', 'h'];
+            document.write("&lt;"+inputArray[0]+"&gt;" +" has "+countLetter(inputArray)+" '"+ inputArray[1]+"' letter.<br>----------------------------<br>");
 
+            
 
 
 
