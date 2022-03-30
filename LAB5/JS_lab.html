@@ -98,8 +98,22 @@
             }
             inputDay = ['2016', '9', '30'];
 
-            document.write("The next day is: "+nextDay(inputDay).year+"-"+nextDay(inputDay).month+"-"+nextDay(inputDay).day)
+            document.write("The next day is: "+nextDay(inputDay).year+"-"+nextDay(inputDay).month+"-"+nextDay(inputDay).day+"<br>----------------------------<br>");
+            
             // Task 8, Distance between Points
+            function distance(points)
+            {
+                x1 = Number(points[0]);
+                y1 = Number(points[1]);
+                x2 = Number(points[2]);
+                y2 = Number(points[3]);
+
+                dist = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+                return dist;
+            }
+
+            points = ['2', '4', '5', '0'];
+            document.write("The distance is: "+distance(points)+"<br>----------------------------<br>");
 
         </script>
     </head>
