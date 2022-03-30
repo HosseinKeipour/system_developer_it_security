@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+            class Employee
+            {
+                constructor(id, name)
+                {
+                    this.id = id;
+                    this.name = name;
+                }
+                detail()
+                {
+                    document.write(this.id + " " + this.name + "<br>");
+                }
+            }
+
+
+
+            class Emp
+            {
+                constructor(id, name)
+                {
+                    this.id = id;
+                    this.name = name;
+                }
+                static display()
+                {
+                    return "static method is invoked"
+                }
+            }
+            document.write(Emp.display() + "<br>");
+
+            var e1 = new Employee(10 ,"abc")
+            e1.detail();
+
+
+            class student
+            {
+                constructor()
+                {
+                    this.name;
+                    this.marks;
+                }
+                getName()
+                {
+                    return this.name;
+                }                
+                setName(name)
+                {
+                    this.name = name;
+                }
+
+                getMarks()
+                {
+                    return this.marks;
+                }                
+                setMark(marks)
+                {
+                    this.marks = marks;
+                }
+
+
+            }
+
+            var s1 = new student();
+            s1.setName("abc_set");
+            s1.setMark(23);
+            document.write(s1.getName() + " " + s1.getMarks() + "<br>");
+            
+            
+            //inheritance has two types: direct and multiple class
+
+            class car
+            {
+                constructor(color, model, year)
+                {
+                    this.color = "red";
+                    this.model = "V60";
+                    this.year = "2020";
+                }
+                starting()
+                {
+                    document.write("parent class Car started" + "<br>");
+                }
+            }
+
+            class volvo extends car
+            {
+                constructor(type)
+                {
+                    super();
+                    this.type = type;
+                }
+                moving()
+                {
+                    document.write("child class car started" + "<br>")
+                }
+            }
+
+            var v1 = new volvo("Hybrid");
+            v1.starting();
+            v1.moving();
+
+            class display extends Date
+            {
+
+            }
+
+            //polymorphism: exebiting more than one form
+            // sum(a,b);
+            // sum(a,b,c);
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--Form validation user and password-->
+        <form name="form1" onsubmit="validateForm()">
+            Name:<input type="text" name="input1"><br>
+            password:<input type="password" name="pwd1"><br>
+            <input type="submit" value="signin"><br>
+
+        </form>
+    </body>
+    <script>
+        function validateForm()
+        {
+            var name = document.form1.input1.value;
+            var pass = document.form1.pwd1.value;
+
+            if (name == null || name == "")  // if(!name)
+            {
+                alert("Name should not be empty");
+            }
+            else if (pass.length < 6)
+            {
+                alert("Password is too short(6 letter at least)");
+            }
+        }
+    </script>
+</html>
