@@ -28,19 +28,19 @@ $(document).ready(function(){
     });
 });
 
-// Jquary slide
+// Jquary slide down vs slide toggle
+
+// $(document).ready(function(){
+//     $("#slide").click(function()
+//     {
+//         $(".p1").slideDown("slow");
+//     });
+// });
 
 $(document).ready(function(){
     $("#slide").click(function()
     {
-        $("#p1").slideDown("slow");
-    });
-});
-
-$(document).ready(function(){
-    $("#slide").click(function()
-    {
-        $("#p1").slideToggle("slow");
+        $(".p1").slideToggle("slow");
     });
 });
 
@@ -48,6 +48,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#a1").click(function(){
-        $("#animate").animate({left:"240px"});
+        $("#animate").animate({left:"500px"});
     });
 });

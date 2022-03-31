@@ -10,24 +10,42 @@
             *** You could design html in Jquary as well.
         -->
         <style>
-            #slide
-            {
+            #slide{
                 padding: 5px;
                 background-color: aquamarine;
             }
-            /* #p1
-            {
+            .p1{
                 display: none;
-            } */
+            }
+            #container {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background: yellow;
+            }
+            #animate {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background: red;
+            }
         </style>
     </head>
     <body>
-        <!-- <div id="p1">This is a Jquary demo.</div> -->
+        
         <div id="div1">This is Hide and Show</div>
-        <div id="slide">Hello world, I am here!!! click to see slide effect</div>
-        <div id="animate" style="background-color:blue; height: 50px; width: 50px; position:absolute"></div>
+        <div id="slide">click to see slideToggle effect</div>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+        
+        
+        <p class="p1">Slide event 1</p>
+        <p class="p1">Slide event 2</p>
+        <p class="p1">Slide event 3</p>
+        <p class="p1">Slide event 4</p>
         <br><br><br><br><br>
-
+        <div id="p2">This is a Jquary fadeOut and fadeIn.</div>
         <button id="hide" type="button">Hide</button>
         <button id="show" type="button">Show</button>
         <button id="fade1" type="button">Fade Out</button>
@@ -35,7 +53,7 @@
         <button id="a1" type="button" >Animate</button>
 
         
-        <p id="p2">Fade event</p>
+
     </body>
     <script>
         // // Method 1
