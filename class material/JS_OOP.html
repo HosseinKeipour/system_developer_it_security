@@ -35,13 +35,13 @@
             }
             document.write(Emp.display() + "<br>");
 
-
+            // JavaScript Encapsulation
             class student
             {
                 constructor()
                 {
-                    this.name;
-                    this.marks;
+                    var name;
+                    var marks;
                 }
                 getName()
                 {
@@ -52,7 +52,7 @@
                     this.name = name;
                 }
 
-                getMarks()
+                getMark()
                 {
                     return this.marks;
                 }                
@@ -67,7 +67,7 @@
             var s1 = new student();
             s1.setName("abc_set");
             s1.setMark(23);
-            document.write(s1.getName() + " " + s1.getMarks() + "<br>");
+            document.write(s1.getName() + " " + s1.getMark() + "<br>");
             
             
             //inheritance has two types: direct and multiple class
