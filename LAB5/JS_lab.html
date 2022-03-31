@@ -62,11 +62,15 @@
 
                 if(person1.age>minimumAge)
                 {
-                    document.write(person1+"<br>----------------------------<br>");
+                    var str = JSON.stringify(person1);
+                    document.write(str+"<br>----------------------------<br>");
+                    // console.log(str);
                 }
                 else if(person2.age>minimumAge)
                 {
-                    document.write(person2+"<br>----------------------------<br>"); 
+                    var str = JSON.stringify(person1);
+                    document.write(str+"<br>----------------------------<br>");
+                    // console.log(str);
                 }
             }
 
