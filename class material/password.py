@@ -9,3 +9,5 @@ random.shuffle(characters)
 print(characters)
 
 
+if "password" in "passWord134".lower():
+    print(True)
