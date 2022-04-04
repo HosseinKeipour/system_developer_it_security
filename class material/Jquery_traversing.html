@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Jquery_html.js"></script>
+        <title>Jquery HTML</title>
+    </head>
+    <body>
+        <!-- Traverse down
+        children()
+        find()          -->
+        <div>
+
+        </div>
+
+
+
+        <!-- Traverse down
+        children()
+        find()          -->
+        <div>
+            divmain
+            <p id="p1" style="width: 200px; height: 200px;"> Child
+                <div id="d1"> <span>grandchild</span></div>
+            </p>
+            <p id="d1"> <span>grandchild</span></p>
+        </div>
+
+        
+        <!-- Traverse right or left 
+            sibinlings(), next(), nextAll(), nextUntil(), prev(), prevAll(), PreUntil()
+        -->
+
+        <div>
+            <p>p1</p>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+        </div>
+    </body>
+
+        <!-- Jquery Filtering
+            first(), last(), eq(), filter(), not()-->
+
+        <div class="x1">
+            <p>p1</p>
+            <h1>h1</h1>
+        </div>
+
+        <div class="x1">
+            <p>p1</p>
+            <h1>h1</h1>
+        </div>
+
+        <div class="x1">
+            <p>p1</p>
+            <h1>h1</h1>
+        </div>
+    <script>
+        $(document).ready(function(){
+            $("span").parentsUntil("#div2").css({"color":"red", "border":"3px solid red"});
+            //<!-- Traverse down children(), find()-->
+            $("p1").children("p.p1").css({"color":"green", "border":"6px solid green"});
+            $("p1").children("span").css({"color":"green", "border":"6px solid green"});
+            // <!-- Traverse right or left sibinlings(), next(), nextAll(), nextUntil(), prev(), prevAll(), PreUntil()-->
+            // $("h2").siblings().css({"color":"blue", "border":"6px solid blue"});
+            // $("h2").next().css({"color":"blue", "border":"6px solid blue"});
+            // $("h2").nextAll().css({"color":"blue", "border":"6px solid blue"});
+            $("h2").nextUntil("h5").css({"color":"blue", "border":"6px solid blue"});
+            //        <!-- Jquery Filtering first(), last(), eq(), filter(), not()-->
+            // $(".x1").first().css({"background-color":"blue"});
+            $(".x1").last().css({"background-color":"blue"});
+        });
+
+        
+    </script>
+</html>
