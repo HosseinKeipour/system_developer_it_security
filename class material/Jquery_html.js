@@ -1,13 +1,18 @@
 $(document).ready(function(){
-
+    $("#b1").click(function(){
+        alert("The text of the <p> element is: "+$("#text").text());
+    });
+    $("#b2").click(function(){
+        alert("The content of the <p> element is: "+$("#text").html());
+    });
 
 
     $("#b3").click(function(){
-        alert(""+"alert");
+        alert("The content of the Form element is " + " " + $("#i1").val());
     });
         
     $("#b4").click(function(){
-        alert(""+"alert");
+        alert("The Attributes are " + " " + $("#i1").attr());
     });
 
     $("#b5").click(function(){
@@ -25,6 +30,9 @@ $(document).ready(function(){
         $("p").append("<img src='car.png' height='50px' width='20px'>"); // eg. after all paragraph
     });
     $("#b9").click(function(){
-        $("p").remove("<img src='car.png' height='50px' width='20px'>"); // eg. after all paragraph
+        $("#d1").remove(); 
+    });
+    $("#b10").click(function(){
+        $("#d1").empty(); 
     });
 });
