@@ -8,6 +8,6 @@ function search() {
         } else
             $(item).css("font-weight", "");
     });
-    $("#result").text(matches + " matches found.");
+    $("#result").text(matches + " "+"matches");
     $("#searchText").val("");
 }
