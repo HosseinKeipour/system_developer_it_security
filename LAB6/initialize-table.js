@@ -13,14 +13,19 @@ function initializeTable() {
         actionSetting();
     }
     function addCountryCapital(country, capital){
-        newRow = $("<tr>")
-                    .append("<td>"+text(country))
-                    .append("<td>"+text(capital))
-                    .append(("<td>")
-                        .append($(<a href="#" id="down">[Down]</a>).click(moveDown))
-                        .append($(<a href="#" id="up">[Up]</a>).click(moveUp))
-                        .append($(<a href="#" id="del">[Delete]</a>).click(del)));
-    }
+        let Row = $('<tr>')
+                    .append($("<td>").text(country))
+                    .append($("<td>"+text(capital))
+                    .append($("<td>")
+                        .append($("<a href='#'>id='down'</a>").click(moveDown))
+                        .append(" ")
+                        .append($("<a href='#' id='up'>[Up]</a>").click(moveUp))
+                        .append(" ")
+                        .append($("<a href='#' id='del'>[Delete]</a>").click(del)));
+        Row.css('display', 'none');
+        $("#countriesTable").append(Row);
+        Row.fadeIn();
+                    }
 
     function moveUp(){
 
