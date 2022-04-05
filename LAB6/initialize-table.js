@@ -2,7 +2,10 @@
 function initializeTable() {
     // TODO
     $("#createLink").click(createCountry);
-    
+    addCountryCapital("Iran", "Tehran");
+    addCountryCapital("Sweden", "Stockholm");
+    addCountryCapital("Germany", "Berlin");
+    actionSetting();
     
     function createCountry() {
         let country = $('#newCountryText').val();
@@ -25,7 +28,7 @@ function initializeTable() {
         Row.css('display', 'none');
         $("#countriesTable").append(Row);
         Row.fadeIn();
-                    }
+    }
 
     function moveUp(){
 
@@ -38,6 +41,7 @@ function initializeTable() {
     }
 
     function actionSetting(){
+        $('#countriesTable a').css('display', 'none');
 
     }
 }
