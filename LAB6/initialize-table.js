@@ -41,7 +41,12 @@ function initializeTable() {
     }
 
     function actionSetting(){
-        $('#countriesTable a').css('display', 'none');
-
+        $('#countriesTable a').css('display', 'inline');
+        let tableRows = $('#countriesTable tr');
+        $(tableRows[2]).find("a:contains('Up')")
+                .css('display', 'none');
+        
+        $(tableRows[tableRows.length-1]).find("a:contains('Down')")
+                .css('display', 'none');
     }
 }
