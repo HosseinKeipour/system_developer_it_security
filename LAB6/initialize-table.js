@@ -15,9 +15,9 @@ function initializeTable() {
     function addCountryCapital(country, capital){
         let Row = $('<tr>')
                     .append($("<td>").text(country))
-                    .append($("<td>"+text(capital))
+                    .append($("<td>").text(capital))
                     .append($("<td>")
-                        .append($("<a href='#'>id='down'</a>").click(moveDown))
+                        .append($("<a href='#' id='Down'>[Down]</a>").click(moveDown))
                         .append(" ")
                         .append($("<a href='#' id='up'>[Up]</a>").click(moveUp))
                         .append(" ")
