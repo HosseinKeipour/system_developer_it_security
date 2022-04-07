@@ -16,7 +16,7 @@ function initializeTable() {
         actionSetting();
     }
     function addCountryCapital(country, capital){
-        let Row = $('<tr>')
+        let row = $('<tr>')
                     .append($("<td>").text(country))
                     .append($("<td>").text(capital))
                     .append($("<td>")
@@ -25,9 +25,9 @@ function initializeTable() {
                         .append($("<a href='#' id='up'>[Up]</a>").click(moveUp))
                         .append(" ")
                         .append($("<a href='#' id='del'>[Delete]</a>").click(del)));
-        Row.css('display', 'none');
-        $("#countriesTable").append(Row);
-        Row.fadeIn();
+        row.css('display', 'none');
+        $("#countriesTable").append(row);
+        row.fadeIn();
     }
 
     function moveUp(){
@@ -36,8 +36,12 @@ function initializeTable() {
     function moveDown(){
         
     }
-    function del(){
-        
+    function del() {
+        let row = $(this).parent().parent();
+        row.fadeOut(function () {
+            row.remove();
+            actionSetting();
+        });
     }
 
     function actionSetting(){
