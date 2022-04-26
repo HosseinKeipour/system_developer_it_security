@@ -42,7 +42,7 @@ print(40*'=')
 
 def doubleChar(s):
     """
-    Program 3
+    Program 4
     """
     out =''
     for char in s:
