@@ -16,24 +16,23 @@ def stringBits(my_str):
     """
     Program 2
     """
-    out = ''
-    for i in range(len(my_str)):
-        if i%2==0:
-            out += my_str[i]
-    return out
+    return my_str[::2]
 
 print(stringBits("Hello"))
 print(stringBits('Hi'))
 print(stringBits('Heeololeo'))
 print(40*'=')
 
-def end_other(end, main):
+def end_other(a, b):
     """
     Program 3
     """
-    if end.lower() in main.lower()[-len(main):] or main.lower() in end.lower()[-len(end):]:
+    if a.lower() in b.lower()[-len(b):] or b.lower() in a.lower()[-len(a):]:
         return True
     return False
+    # a =a.lower() 
+    # b = b.lower()
+    # return a.endswith(b) or b.endswith(a)
 
 print(end_other('Hiabc', 'abc'))
 print(end_other('AbC', 'HiaBc'))
